@@ -1,0 +1,9 @@
+{
+  "name": "super-ludo-server",
+  "version": "1.0.0",
+  "description": "SUPER LUDO online multiplayer server",
+  "main": "superludo-room-server-final.js",
+  "scripts": {
+    "start": "node superludo-room-server-final.js"
+  }
+}
