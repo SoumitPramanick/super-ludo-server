@@ -7,6 +7,66 @@
 @media(max-width:1050px){.shell{padding-left:28px;padding-right:28px}.rail{width:72px}.shell{margin-left:72px}.game-grid{gap:19px}.card-body{padding-left:21px;padding-right:21px}.card-body h2{font-size:23px}.match-content{gap:22px;grid-template-columns:minmax(320px,1fr) 240px}.small-pill{display:none}.home-bottom .utility{padding:14px}.art .preview{width:235px;height:235px}.snakes .art .preview{width:230px;height:230px}.float-dice{right:18px;width:52px;height:52px}.card-tag{left:18px;top:18px}}
 @media(max-width:760px){#app{min-height:100dvh}.rail{display:none}.shell{margin:0;padding:22px 20px}.brand-badge{display:block}.topbar{margin-bottom:31px;min-height:45px}.brand-name{font-size:18px}.brand-name span{font-size:24px}.top-actions{gap:4px}.offline{padding:8px 10px;font-size:8px;letter-spacing:1px}.home-intro h1{font-size:34px}.home-intro p{font-size:12px}.home-intro{margin-bottom:23px}.game-grid{gap:17px}.art{height:200px}.art .preview{width:176px;height:176px;top:15px}.snakes .art .preview{width:169px;height:169px}.card-tag{font-size:7px;padding:5px 6px;top:12px;left:12px}.card-body{padding:15px}.card-body h2{font-size:21px}.game-emblem{display:none}.card-body p{font-size:11px;line-height:1.5;min-height:18px;margin:8px 0 13px}.card-meta{gap:8px;flex-wrap:wrap;font-size:9px;margin-bottom:16px}.card-meta svg{width:13px;height:13px}.play{font-size:11px;height:45px}.float-dice{width:40px;height:40px;bottom:19px;right:16px;border-radius:10px}.spark{font-size:19px;left:10%;top:30%}.orbit{display:none}.home-bottom{flex-wrap:wrap;margin-top:22px}.resume-card{flex-basis:100%;order:-1}.home-bottom .utility{flex:1}.local-note{font-size:9px;margin-top:22px}.game-card{border-radius:19px}.match-header{margin-bottom:18px}.match-header h1{font-size:23px}.match-header .offline{display:none}.match-content{display:flex;flex-direction:column;gap:22px;align-items:stretch}.board-frame{max-width:min(100%,560px);max-height:none}.match-side{display:grid;grid-template-columns:1fr 1fr;gap:13px}.turn-card{padding:16px 10px;grid-row:span 2}.turn-name{font-size:20px}.turn-message{font-size:11px}.roll-btn{width:69px;height:69px;margin-top:13px}.roster{gap:6px}.roster-row{padding:8px;gap:8px}.roster-row .avatar{width:26px;height:29px;font-size:13px}.roster-info strong{font-size:11px}.roster-info small{font-size:9px}.roster-score{font-size:12px}.board-hint{font-size:10px}.turn-number{display:none}.match-shell .topbar{display:none}.match-shell{padding-top:19px}.player-row{gap:8px;padding:10px}.player-row select{max-width:106px;font-size:10px;padding:8px 4px}.panel{padding:20px}.config-row{gap:10px}.toast{left:50%;bottom:23px;width:max-content;max-width:90%}.modal{padding:26px}.setup-footer{flex-wrap:wrap}.setup-footer .utility{padding:13px}.tutorial-steps{gap:9px}.tutorial-step{padding:12px}}
 @media(max-width:440px){.shell{padding:20px 16px}.game-grid{grid-template-columns:1fr}.game-card{display:grid;grid-template-columns:43% 57%;min-height:224px}.art{height:100%}.art .preview{width:162px;height:162px;left:3px;top:13px}.snakes .art .preview{width:157px;height:157px}.card-body{padding:34px 15px 24px 9px}.card-body h2{font-size:22px}.card-body p{font-size:11px}.card-meta{gap:9px;margin-bottom:15px}.card-tag{top:13px;left:14px}.float-dice{width:34px;height:34px;right:8px;bottom:21px}.home-intro p{margin-top:8px}.topbar{margin-bottom:27px}.home-intro{margin-bottom:22px}.spark{left:15%;top:23%}.card-body .play{height:40px}.home-bottom{gap:10px}.local-note{margin-top:20px}.setup-layout .panel{padding:16px}.player-row .avatar{width:29px;height:33px;font-size:15px}.player-row input{font-size:12px}.segmented button{font-size:10px;padding:13px 7px}.field-label{font-size:11px}.count button{width:36px}.tutorial-steps{grid-template-columns:1fr}.rule-box{gap:10px}}
+
+/* Responsive landscape: fit the available device viewport instead of using desktop-sized cards. */
+@media (orientation:landscape) and (max-height:760px){
+  #app{min-height:100dvh;overflow:auto}
+  .shell{padding-top:14px;padding-bottom:14px}
+  .topbar{min-height:42px;margin-bottom:18px}
+  .home-intro{margin-bottom:14px}
+  .home-intro h1{font-size:clamp(28px,5vh,40px)}
+  .home-intro p{margin-top:6px;font-size:clamp(10px,1.8vh,13px)}
+  .game-grid{gap:16px}
+  .art{height:clamp(145px,29vh,215px)}
+  .art .preview{width:clamp(145px,29vh,205px);height:clamp(145px,29vh,205px);top:8px}
+  .snakes .art .preview{width:clamp(140px,28vh,198px);height:clamp(140px,28vh,198px)}
+  .card-tag{top:10px;left:12px;padding:5px 7px;font-size:7px}
+  .float-dice{width:clamp(34px,7vh,48px);height:clamp(34px,7vh,48px);right:14px;bottom:14px}
+  .card-body{padding:12px 16px 14px}
+  .card-body h2{font-size:clamp(19px,3.2vh,24px)}
+  .card-body p{font-size:clamp(10px,1.7vh,12px);margin:6px 0 10px}
+  .card-meta{gap:10px;font-size:clamp(8px,1.5vh,10px);margin-bottom:11px}
+  .play{height:clamp(38px,6vh,45px);font-size:clamp(9px,1.6vh,11px)}
+  .local-note{margin-top:10px}
+  .screen-top{margin-bottom:12px}
+  .screen-top h1{font-size:24px}
+  .panel{padding:18px}
+  .config-row{margin:14px 0 12px}
+  .player-rows{gap:7px}
+  .player-row{padding:8px}
+  .setup-footer{margin-top:13px}
+  .modal{max-height:calc(100dvh - 20px);padding:20px}
+  .match-shell{padding-top:12px}
+  .match-header{margin-bottom:10px}
+  .match-content{gap:16px}
+  .board-frame{max-height:calc(100dvh - 115px);max-width:calc(100dvh - 115px)}
+  .match-side{gap:10px}
+  .turn-card{padding:12px}
+  .roll-btn{width:clamp(56px,12vh,70px);height:clamp(56px,12vh,70px);margin-top:8px}
+  .roster-row{padding:7px}
+}
+@media (orientation:landscape) and (max-height:500px){
+  .shell{padding:9px 16px}
+  .topbar{margin-bottom:10px}
+  .brand-name{font-size:16px}
+  .brand-name span{font-size:21px}
+  .offline{padding:6px 8px;font-size:7px}
+  .home-intro{margin-bottom:9px}
+  .home-intro h1{font-size:clamp(23px,5.5vh,30px)}
+  .home-intro p{font-size:10px}
+  .game-grid{gap:10px}
+  .art{height:clamp(115px,27vh,160px)}
+  .art .preview{width:clamp(115px,27vh,155px);height:clamp(115px,27vh,155px)}
+  .snakes .art .preview{width:clamp(110px,26vh,150px);height:clamp(110px,26vh,150px)}
+  .card-body{padding:8px 11px 10px}
+  .card-body h2{font-size:18px}
+  .card-body p{font-size:9px;margin:4px 0 6px}
+  .card-meta{gap:6px;font-size:7px;margin-bottom:6px}
+  .play{height:34px;font-size:8px}
+  .float-dice{width:30px;height:30px;right:8px;bottom:8px}
+  .local-note{display:none}
+}
+
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001s!important;transition-duration:.001s!important}}
 </style></head><body><div id="app"></div><div id="modal-root"></div><div id="toast-root" aria-live="polite"></div>
 <script>
